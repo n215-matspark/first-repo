@@ -50,7 +50,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 40%;
+        max-width: 75%;
       }
     }
     .single-line-input-holder {
@@ -63,7 +63,7 @@
       }
     }
   }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 800px) {
     .content-wrapper {
       width: 100%;
       .tour-boxes {
@@ -71,7 +71,6 @@
         align-items: center;
         justify-content: center;
         max-width: 75%;
-        margin-top: 5%;
       }
     }
     .bookings {
