@@ -28,99 +28,37 @@ p {
   position: relative;
 }
 
-@media screen and (max-width: 1125px) {
-  .content-wrapper {
-    width: 100%;
-  }
-  .content-wrapper .tour-boxes {
-    max-width: 70%;
-  }
-  .single-line-input-holder {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .single-line-input-holder .large-input {
-    max-width: 580px;
-    min-height: 58px;
-  }
-}
-@media screen and (max-width: 1050px) and (min-width: 601px) {
-  .nav-container {
-    width: 100%;
-  }
-  .nav-container nav {
-    max-width: 90%;
-  }
-  .nav-container nav ul {
-    display: flex;
-  }
-  .content-wrapper {
-    width: 100%;
-  }
-  .content-wrapper .tour-boxes {
-    max-width: 75%;
-  }
-  .two-input {
-    max-width: 100%;
-  }
-  .two-input .left {
-    max-width: 48%;
-  }
-  .two-input .right {
-    max-width: 48%;
-  }
-}
-@media screen and (max-width: 1050px) and (min-width: 601px) and (max-width: 961px) {
-  .content-wrapper {
-    width: 100%;
-  }
-  .content-wrapper .tour-boxes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 75%;
-  }
-  .single-line-input-holder {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .single-line-input-holder .large-input {
-    max-width: 475px;
-    min-height: 58px;
-  }
-}
-@media screen and (max-width: 1050px) and (min-width: 601px) and (max-width: 800px) {
-  .content-wrapper {
-    width: 100%;
-  }
-  .content-wrapper .tour-boxes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 75%;
-  }
+@media screen and (max-width: 1265px) {
   .bookings {
     min-height: 900px;
   }
+  .bookings .form .two-input {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .bookings .form .two-input input {
+    min-width: 100%;
+  }
   .bookings .form .three-inputs-container {
-    max-width: 40%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   .bookings .form .three-inputs-container .three-inputs {
-    min-width: 230px;
-    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    padding: 5% 0;
   }
   .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
     position: absolute;
-    left: 200px;
-    top: 36%;
+    top: 16%;
+    right: 15px;
   }
   .bookings .form .single-line-input-holder {
     display: flex;
@@ -128,11 +66,11 @@ p {
     justify-content: space-between;
   }
   .bookings .form .single-line-input-holder .large-input {
-    max-width: 375px;
+    max-width: 84%;
     min-height: 58px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1150px) {
   .nav-container {
     width: 100%;
   }
@@ -141,11 +79,6 @@ p {
   }
   .nav-container nav ul {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-  }
-  .hero .hero-text {
-    max-width: 90%;
   }
   .content-wrapper {
     width: 100%;
@@ -154,38 +87,39 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 75%;
-    margin-top: 5%;
+    flex-direction: column;
+    row-gap: 20px;
   }
   .bookings {
     min-height: 900px;
   }
   .bookings .form .two-input {
-    max-width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
   }
-  .bookings .form .two-input .left {
-    max-width: 48%;
-  }
-  .bookings .form .two-input .right {
-    max-width: 48%;
+  .bookings .form .two-input input {
+    min-width: 100%;
   }
   .bookings .form .three-inputs-container {
-    max-width: 40%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   .bookings .form .three-inputs-container .three-inputs {
-    min-width: 230px;
-    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    padding: 5% 0;
   }
   .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
     position: absolute;
-    left: 200px;
-    top: 36%;
+    top: 16%;
+    right: 15px;
   }
   .bookings .form .single-line-input-holder {
     display: flex;
@@ -193,17 +127,94 @@ p {
     justify-content: space-between;
   }
   .bookings .form .single-line-input-holder .large-input {
-    max-width: 275px;
+    max-width: 84%;
     min-height: 58px;
   }
-  .bookings .form .sumbit-form input {
+}
+@media screen and (max-width: 1005px) {
+  .bookings .form .three-inputs-container {
     max-width: 100%;
+    margin-bottom: 20px;
   }
-  footer {
+  .bookings .form .three-inputs-container .three-inputs label {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "GillSans-L", sans-serif;
+    font-size: 18px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .small-input {
+    width: 98px;
+    min-height: 55px;
+    padding: 0 12px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content-wrapper {
     width: 100%;
   }
-  footer .footer-background {
-    max-width: 90%;
+  .content-wrapper .tour-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .bookings {
+    min-height: 900px;
+  }
+  .bookings .form .two-input {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .bookings .form .two-input input {
+    min-width: 100%;
+  }
+  .bookings .form .three-inputs-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .bookings .form .three-inputs-container .three-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .bookings .form .three-inputs-container .three-inputs label {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "GillSans-L", sans-serif;
+    font-size: 18px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .small-input {
+    width: 80px;
+    min-height: 52px;
+    padding: 0 12px;
+  }
+  .bookings .form .three-inputs-container .three-inputs .icon {
+    font-size: 28px;
+    position: absolute;
+    top: 16%;
+    right: 15px;
+  }
+  .bookings .form .single-line-input-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bookings .form .single-line-input-holder .large-input {
+    max-width: 82%;
+    min-height: 58px;
   }
 }
 @font-face {
@@ -271,21 +282,28 @@ p {
 
 footer {
   background-color: #79addc;
-  width: 100%;
+  max-width: 100%;
   height: 100px;
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer .footer-background {
-  max-width: 980px;
+  min-width: 76.5625%;
   margin: 0 auto;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer .footer-background .footer-bottom {
-  max-width: 980px;
+  width: 90%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer .footer-background .footer-bottom .footer-links {
+  width: 100%;
   margin-top: 1%;
   display: flex;
   align-items: center;
@@ -314,6 +332,7 @@ footer .footer-background .footer-bottom .footer-links div p {
   height: 300px;
   max-width: 32.8125%;
   color: #FFFFFF;
+  margin-top: 50px;
 }
 .home .hero .hero-text ul {
   text-align: center;
@@ -425,19 +444,21 @@ footer .footer-background .footer-bottom .footer-links div p {
   border: solid #79addc 2px;
 }
 .bookings .form .two-input {
-  min-height: 58px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  max-height: 121px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.bookings .form .two-input input {
+  margin-bottom: 15px;
 }
 .bookings .form .two-input .left {
   width: 344px;
-  height: 58px;
+  min-height: 58px;
 }
 .bookings .form .two-input .right {
   width: 453px;
-  height: 58px;
+  min-height: 58px;
+  float: right;
 }
 .bookings .form .single-line-input-holder {
   display: flex;
@@ -445,11 +466,11 @@ footer .footer-background .footer-bottom .footer-links div p {
   justify-content: space-between;
   position: relative;
   margin-bottom: 20px;
-  padding-right: 10px;
 }
 .bookings .form .single-line-input-holder .large-input {
   width: 698px;
   min-height: 58px;
+  float: right;
 }
 .bookings .form .single-line-input-holder .icon {
   font-size: 20px;
@@ -461,6 +482,7 @@ footer .footer-background .footer-bottom .footer-links div p {
   font-size: 18px;
 }
 .bookings .form .three-inputs-container {
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -472,18 +494,18 @@ footer .footer-background .footer-bottom .footer-links div p {
   justify-content: space-between;
   position: relative;
 }
-.bookings .form .three-inputs-container .three-inputs .small-input {
+.bookings .form .three-inputs-container .small-input {
   max-width: 103px;
   min-height: 58px;
   padding: 0 20px;
 }
-.bookings .form .three-inputs-container .three-inputs .icon {
+.bookings .form .three-inputs-container .icon {
   font-size: 28px;
   position: absolute;
   top: 16%;
   right: 15px;
 }
-.bookings .form .three-inputs-container .three-inputs label {
+.bookings .form .three-inputs-container label {
   padding-right: 50px;
   font-family: "GillSans-L", sans-serif;
   font-size: 18px;
